@@ -1,0 +1,390 @@
+/* GERAL */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+}
+
+body{
+    background-color: #0c0c0c;
+    height: 100vh;
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h2.titulo{
+    color: #fff;
+    font-size: 65px;
+    text-align: center;
+}
+
+ span{
+    color: aqua;
+}
+
+/* CABEÇALHO */
+
+.logo img{
+    width: 300px;
+    height: 200px;
+    padding: auto;
+}
+
+header{
+    padding: 5px;
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    color: #fff;
+    display: inline-block;
+    transition: .2s;
+    text-decoration: none;
+}
+
+header a:hover{
+    color: aqua;
+    transform: scale(1.05);
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+header .download button{
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600px;
+    padding: 10px 40px;
+    border-radius: 30px;
+    background-color: rgb(101, 173, 181);
+}
+
+header .download button:hover{
+    box-shadow: 0px 0px 8px rgb(101, 173, 181);
+}
+
+
+/* TOPO */
+
+section.topo{
+    padding: 40px 4%;
+}
+
+section .topo .flex{
+    gap: 90px;
+    align-items: center;
+    justify-content: center;
+}
+
+.topo h1{
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 58px;
+    line-height: 90px;
+}
+
+.topo .texto{
+    color: #fff;
+    margin: 40px 0;
+}
+
+.topo .img img{
+    
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar{
+    0%{
+        top: 0;
+    }
+
+    100%{
+        top: 30px;
+    }
+}
+
+/* JOGOS */
+
+section.colunas{
+    padding: 60px 4%;
+}
+
+section.colunas .flex{
+    gap: 60px;
+}
+
+.colunas .jogos{
+    color: #fff;
+    padding: 40px;
+    margin-top: 45px;
+    transition: .2s;
+    border-radius: 20px;
+}
+
+.colunas .jogos:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #737070;
+}
+
+.colunas .jogos img{
+        width: 240px 319px;
+}
+
+.colunas .jogos h6{
+    font-size: 15px;
+    margin: 15px 0;
+}
+
+/* SOBRE */
+
+section.sobre img{
+    border-radius: 30px;
+}
+
+section.sobre{
+    padding: 80px 4%;
+}
+
+section.sobre .flex{
+    align-items: center;
+    gap: 60px;
+}
+
+.sobre .txt-sobre{
+    color: #fff;
+}
+
+.sobre .txt-sobre h2{
+    font-size: 40px;
+    color: aqua;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.sobre .txt-sobre p{
+    text-align: justify;
+}
+
+.sobre .txt-sobre ul{
+    padding: 20px;
+}
+
+
+/* FORMATANDO PG DE CADASTRO */
+
+.box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #031625;
+    padding: 15px;
+    border-radius: 15px;
+    color: #fff;
+    width: 30%;
+}
+
+fieldset{
+    border: 3px solid aqua;
+    padding: 10px;
+}
+
+legend{
+    border: 1px solid aqua;
+    padding: 8px;
+    text-align: center;
+    background-color: aqua;
+    border-radius: 5px;
+    color: #000;
+}
+
+.inputs{
+    position: relative;
+}
+
+.inputUser{
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: #fff;
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 2px;
+}
+
+.form{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.inputUser:focus ~ .form,
+.inputUser:valid ~ .form{
+    top: -20px;
+    font-size: 12px;
+    color: aqua;
+}
+
+#data{
+    border: none;
+    padding: 8px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 15px;
+}
+
+#submit{
+    background-image: linear-gradient(to right, rgb(5, 247, 255), rgb(7, 85, 99));
+    width: 100%;
+    border: none;
+    padding: 15px;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#submit:hover{
+    background-image: linear-gradient(to right, rgb(12, 210, 217),rgb(6, 66, 77));
+}
+
+/*** Formatando pg login ***/
+
+.area-login{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+ }
+
+ 
+ .login2{
+    box-shadow: 1px 1px 6px #000000;
+    background-image: url(img/login.png);
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    width: 355px;
+    height: 320px;
+    padding: 35px;
+ }
+ 
+ .login2 form{
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+ }
+
+ .login2 p{
+    color: #fff;
+    margin-top: 5px;
+ }
+
+ .login2 a{
+    text-decoration: none;
+    color: aqua;
+ }
+ 
+ .login2 input{
+    border: none;
+    padding: 5px;
+    outline: none;
+    margin-top: 20px;
+    border-radius: 5px;
+    background: none;
+    box-shadow: 1px 1px 6px #ffffff1e;
+ }
+ 
+ 
+ form [type='submit']{
+    display: block;
+    font-size: 15px;
+    padding: 7px;
+    cursor: pointer;
+    background-color: rgb(87, 149, 156);
+ }
+
+/* RESPONSIVO */
+
+@media screen and (max-width: 1020px){
+
+    /* Geral */
+
+    h2.titulo{
+        font-size: 30px;
+    }
+
+    
+
+    .flex{
+        flex-direction: column;
+    }
+
+    .topo .flex{
+        flex-direction: column-reverse;
+    }
+
+    /* Cabeçalho */
+    .menu, .download{
+        display: none;
+    }
+
+    /* TOPO */
+
+    section .topo .flex{
+        gap: 40px;
+    }
+
+    section.topo{
+        padding: 20px 8%;
+    }
+
+    .topo h1{
+        font-size: 30px;
+    }
+
+    .topo .img img{
+        width: 100%;
+    }
+
+    /* SOBRE */
+
+    section.sobre{
+        padding: 80px 8%;
+    }
+
+    .sobre .txt-sobre h2{
+        font-size: 30px;
+    }
+
+}
